@@ -14,6 +14,7 @@
         <div class="login-main-text">
             <h1>T&L Foodstore<br> Login Page</h1>
             <p>Login or SignUp from here to access.</p>
+            <p class='author'>@bartHeart</p>
         </div>
     </div>
 
