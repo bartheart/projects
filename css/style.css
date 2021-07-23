@@ -1,0 +1,162 @@
+body {
+    background-color: #dedddb;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+  }
+  
+  header {
+    background-color: #22201f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  header nav {
+    padding: 2.5%;
+  }
+  
+  header nav a {
+    color: #dedddb;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  header .logo {
+    cursor: pointer;
+    padding: 1%;
+    width: auto;
+    height: 100%;
+  }
+
+  header .cart {
+    cursor: pointer;
+    padding: 2%;
+    width: auto;
+    height: 100%;
+  }
+  
+  main {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    width: auto;
+    height: 100%;
+  }
+  
+  main table {
+    width: 100%;
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 0.5px;
+  }
+  
+  main table td, main table th {
+    border: 1px solid;
+    padding: 8px;
+  }
+  
+  main table tr:nth-child(even) {
+    background-color: #cebebe;
+  }
+  
+  main table input {
+    width: 40px;
+  }
+  
+  footer {
+    background-color: #22201f;
+  }
+  
+  footer p {
+    color: #dedddb;
+    text-align: center;
+    font-weight: 100;
+    font-size: 10px;
+    padding: auto;
+  }
+      
+  #pCost, #amntStock {
+    width: 50px;
+  }
+  
+  .navLink a {
+    -webkit-transform: all 0.3s ease 0s;
+            transform: all 0.3s ease 0s;
+  }
+  
+  .navLink a:hover {
+    color: #d813d8;
+  }
+  
+  .order {
+    display: block;
+  }
+  
+  .err {
+    color: #f71a1a;  
+  }
+
+  .secondary_nav{
+      background-color: #272520;
+  }
+
+  .nav_ele{
+      display: inline-block;
+      color: #dedddb;
+      width: 24%;
+      
+  }
+
+  .nav_ele input{
+    width: 100%;
+    padding: 1%;
+  }
+
+  .o_table{
+    display:grid;
+    grid-gap: 2%;
+    grid-template-columns:auto auto auto auto auto;
+    grid-template-rows:(10,1fr);
+    
+  }
+
+  .unit {
+    border: 2px solid black;
+    border-radius: 0px 8px 8px 8px;
+    cursor: cell;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    min-height: 68px;
+  }
+  
+  .unit:hover {
+    background-color: rgb(24, 21, 21);
+    color: white;
+    z-index: 1;
+    animation: scale 0.5s ease-in-out forwards;
+  }
+
+  .shit{
+    display: none;
+  }
+
+  .searchBar{
+    margin: 10px 0px 10px 0px;
+  }
+
+
+  
+
+  
+
+
+  /*# sourceMappingURL=style.css.map */
+
+  
