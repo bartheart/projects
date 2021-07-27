@@ -12,11 +12,11 @@
 .btn {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
-    border-radius: 5px;
+    border-radius: 1px;
     font: 12px Helvetica;;
     color: #ffffff;
     font-size: 14px;
-    background: #141313;
+    background: #22201f;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
   }

@@ -40,6 +40,11 @@
                         <div class="err"><?php echo $errors['password'] ?></div>
                     </div>
                     <div class="form-group">
+                        <label for="password_2">Re-enter Password</label>
+                        <input id="password_2" type="password" name="rePassword" value="<?php echo $rePassword?>" >
+                        <div class="err"><?php echo $errors['rePassword'] ?></div>
+                    </div>
+                    <div class="form-group">
                         <label for="role">Select Position</label>
                         <select id="role" name="role" value="<?php echo $role?>">
                             <option value="manager">Manager</option>
@@ -55,10 +60,6 @@
         </div>
     </div>
    
-
-    <?php
-        include ('templates/footer.php');     
-    ?>
 
     
     

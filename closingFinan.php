@@ -40,8 +40,6 @@
 
 </main>
 
-<?php
-    include ('templates/footer.php');     
-?>
+
 
 </html>

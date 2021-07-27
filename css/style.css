@@ -3,6 +3,7 @@ body {
     width: 100%;
     height: auto;
     margin: 0%;
+    position: absolute;
   }
   
   header {
@@ -10,6 +11,11 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -38,6 +44,12 @@ body {
     width: auto;
     height: 100%;
   }
+
+  .buttons{
+    position: fixed;
+    left:0%;
+    top:13%;
+  }
   
   main {
     padding-right: 4%;
@@ -45,6 +57,9 @@ body {
     padding-bottom: 4%;
     width: auto;
     height: 100%;
+    position: relative;
+    top: 100px;
+    
   }
   
   main table {
@@ -69,6 +84,10 @@ body {
   
   footer {
     background-color: #22201f;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
   }
   
   footer p {
@@ -149,6 +168,22 @@ body {
 
   .searchBar{
     margin: 10px 0px 10px 0px;
+  }
+
+  .container{
+    height: fit-content;
+    color: #dedddb;
+    font-size: 12px;
+  }
+  .contentFooter{
+    padding: 2%;
+  }
+
+  .rightFooter {
+    float: right;
+  }
+  .leftFooter{
+    float: left;
   }
 
 

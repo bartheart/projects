@@ -2,8 +2,9 @@
     $userName ='';
     $email ='';
     $password ='';
+    $rePassword = '';
     $role ='';
-    $errors = array('userName'=>'', 'email'=> '', 'password'=> '', 'role'=> '');
+    $errors = array('userName'=>'', 'email'=> '', 'password'=> '', 'rePassword'=> '', 'role'=> '');
     //SIGNUP  
     if(isset($_POST['submit_signUp'])){
 
@@ -13,7 +14,7 @@
         $email =$_POST['email'];
         $password =$_POST['password'];
         $role =$_POST['role'];
-        //$passwordRepeat = $GET['sd']; */
+        $rePassword = $_POST['rePassword']; 
         
 
         if(empty($userName)){
@@ -42,6 +43,9 @@
             elseif(!preg_match("#[a-z]+#",$password)) {
                 $errors['password'] = "Your Password Must Contain At Least 1 Lowercase Letter!";
             } 
+            else if($password != $rePassword){
+                $errors['rePassword']="The password entry doesnt match!";
+            }
         }
         else if (empty($password)){
             $errors['password'] = 'A password is required';

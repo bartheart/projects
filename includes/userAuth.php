@@ -51,8 +51,7 @@
                 header('Location: closingFinan.php');
             }
             else{
-                echo "<script>alert('User added sucessfully')</script>";
-                header("Location: index.php?error=worngpassword");
+                $errors['password'] = 'Incorrect password or Email';
             }
             
         }        

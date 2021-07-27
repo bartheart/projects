@@ -29,36 +29,16 @@
             <a href="index.php"><img src="images/preN.png"></a>
         </div>
         <nav class="navLink">
-            <a href="index.php" >Home</a>
-            <a href="#" >Contacts</a>
-            <a href="#" >Report</a>
-            <a href="#" >Sth</a>
+        <a id="inventory" href="inventory.php" class="btn btn-white">Home</a></button>
+            <a class="btn btn-white" id="orderItem" href="order.php">Order Products</a>
+            <a class="btn btn-white" href="addItem.php">Add To Inventory</a>
+            <a class="btn btn-white" id="finan" href="closingFinan.php">Print Order</a>
         </nav>
         <div class="cart">
             <a href="cart.php"><img src="images/shopping-cart.png"></a>
-        </div>     
-          
-    </header>
-    
-    
-        <div id="btnContainer" class="buttons">            
-            <div class="dark">
-                <button>
-                <a id="inventory" href="inventory.php" class="btn btn-white">Browse Inventory</a></button>
-            </div>
-            <div class="dark">
-                <button>
-                <a class="btn btn-white" href="addItem.php">Add To Inventory</a></button>
-            </div>
-            <div class="dark">
-                <button>
-                <a class="btn btn-white" id="orderItem" href="order.php">Order Products</a></button>
-            </div>
-            <div class="dark">
-                <button>
-                <a class="btn btn-white" id="finan" href="closingFinan.php">Print Order</a></button>
-            </div>
-            
         </div>
+       
+          
+    </header>   
     
     <main>

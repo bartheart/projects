@@ -39,7 +39,8 @@
         if ($resutCheck > 0){
             while($row = mysqli_fetch_array($result)){
                 echo "  
-                    <div class='car unit'>                                                                         
+                    <div class='car unit'> 
+                        <form method='POST'>                                                                        
                             <div class='nameT'>".$row['brand']."</div>
                             <div class='descT'>".$row['description']."</div>
                             <div class='itemT'>".$row['itemType']."</div>
@@ -47,6 +48,7 @@
                             <div class='amnT'>".$row['amntOrder']."</div> 
                             <div class='shit'><input value=".$row['idItems']." name='idd'></div>
                             <div class='subT'><input type='submit' value='Remove' name='deleteItem'></div>         
+                        </form>
                     </div>
                     ";
             }
@@ -62,8 +64,5 @@
 
 </main>
 
-<?php
-    include ('templates/footer.php');     
-?>
 
 </html>

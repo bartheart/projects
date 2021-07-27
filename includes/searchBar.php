@@ -13,20 +13,27 @@
                     
                     echo "
                         <div class='unit'>
-                            <form>
-                                <tr>
-                                    <td>".$row['brand']."</td>
-                                    <td>".$row['description']."</td>
-                                    <td>".$row['itemType']."</td>
-                                    <td>".$row['pCost']."</td>
-                                    <td>".$row['amntOrder']."</td>
-                                    <td><input type='number' name='amntOrder'></td>
-                                    <td><input type='submit' name='orderSubmit' value='Add to Cart'></td>
-                                </tr>
+                            <form  method='POST'>                                
+                                <div class='nameT'>".$row['brand']."</div>
+                                <div class='descT'>".$row['description']."</div>
+                                <div class='itemT'>".$row['itemType']."</div>
+                                <div class='costT'>".$row['pCost']."</div>
+                                <div class='amnT'>".$row['amntOrder']."</div>
+                                <div class='noT'><input type='number' name='amntOrder'></div>
+                                <div class='shit'><input value=".$row['idItems']." name='idd'></div>
+                                <div class='subT'><input type='submit' name='orderSubmit' value='Add to Cart'></div>
+                                
                             </form>
                         </div>
                     ";
                     
+                }
+                if(isset($_POST['orderSubmit'])){ 
+                    $row = mysqli_fetch_array($result);
+                    $amntOrder = $_POST['amntOrder'];
+                    $sql2 = "INSERT INTO  cart (brand, description, itemType, pCost, amntOrder) SELECT brand, description, itemType, pCost, $amntOrder FROM items WHERE idItems = ".$_POST['idd']
+                    ."";
+                    $result2 = mysqli_query($conn, $sql2);
                 }
             }
             else{
